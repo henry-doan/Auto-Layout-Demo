@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Auto_Layout_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2v1-Vn-ezh">
+                                <rect key="frame" x="20" y="0.0" width="57" height="30"/>
+                                <state key="normal" title="Left Top"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xN1-nG-Cxq">
+                                <rect key="frame" x="328" y="0.0" width="66" height="30"/>
+                                <state key="normal" title="Right Top"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdh-6m-Z6W">
+                                <rect key="frame" x="20" y="706" width="59" height="30"/>
+                                <state key="normal" title="Left Btm"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syD-2E-rfp">
+                                <rect key="frame" x="326" y="706" width="68" height="30"/>
+                                <state key="normal" title="Right Btm"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asb-mE-THF">
+                                <rect key="frame" x="317" y="199" width="227.66666666666663" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="6vg-fC-Xxz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9x-fP-kaO">
+                                <rect key="frame" x="239.99999999999997" y="262" width="381.33333333333326" height="447"/>
+                                <string key="text">Bacon ipsum dolor amet porchetta pork chop 
+capicola, chicken leberkas hamburger biltong. 
+Filet mignon pastrami biltong andouille,
+kevin leberkas burgdoggen flank sausage fatback.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xN1-nG-Cxq" firstAttribute="trailing" secondItem="syD-2E-rfp" secondAttribute="trailing" id="0fx-md-690"/>
+                            <constraint firstItem="pdh-6m-Z6W" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="B7q-4S-bdM"/>
+                            <constraint firstItem="2v1-Vn-ezh" firstAttribute="baseline" secondItem="xN1-nG-Cxq" secondAttribute="baseline" id="D5s-mw-tnd"/>
+                            <constraint firstItem="D9x-fP-kaO" firstAttribute="top" secondItem="asb-mE-THF" secondAttribute="bottom" constant="8" symbolic="YES" id="FI7-fI-dBU"/>
+                            <constraint firstItem="D9x-fP-kaO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="240.04000000000053" id="MKZ-T7-xn5"/>
+                            <constraint firstItem="asb-mE-THF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="316.8400000000006" id="SOU-wF-D9A"/>
+                            <constraint firstItem="2v1-Vn-ezh" firstAttribute="leading" secondItem="pdh-6m-Z6W" secondAttribute="leading" id="Ugb-2o-ulC"/>
+                            <constraint firstItem="asb-mE-THF" firstAttribute="centerX" secondItem="D9x-fP-kaO" secondAttribute="centerX" id="XQ5-Dv-jRu"/>
+                            <constraint firstItem="pdh-6m-Z6W" firstAttribute="baseline" secondItem="syD-2E-rfp" secondAttribute="baseline" id="Zfa-P6-8s9"/>
+                            <constraint firstItem="xN1-nG-Cxq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dRH-qR-5ob"/>
+                            <constraint firstItem="2v1-Vn-ezh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eAU-VK-NWd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="asb-mE-THF" secondAttribute="trailing" constant="319.1599999999994" id="msx-5D-KFV"/>
+                            <constraint firstItem="asb-mE-THF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="199" id="skl-xk-d8j"/>
+                            <constraint firstItem="2v1-Vn-ezh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xBu-nd-PFM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="D9x-fP-kaO" secondAttribute="bottom" constant="27" id="xPo-Te-gdx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.750000000000014"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
